@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,19 +15,18 @@
 		010B8ED41AA7E00600A1B55A /* ABNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A06A713FEFD2E007E8CCF /* ABNotice.m */; };
 		010B8ED51AA7E00600A1B55A /* ABNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A06A913FEFD2E007E8CCF /* ABNotifier.m */; };
 		010B8ED71AA7E00600A1B55A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019511C71A9C0274007F9070 /* Cocoa.framework */; };
-		010B8ED81AA7E00600A1B55A /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01ABD1321AA15CE0005638A7 /* CrashReporter.framework */; };
 		010B8ED91AA7E00600A1B55A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019511C31A9C01FF007F9070 /* SystemConfiguration.framework */; };
 		010B8EDB1AA7E00600A1B55A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E0B50137A11E1009B558C /* InfoPlist.strings */; };
 		010B8EDC1AA7E00600A1B55A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E0B56137A11E1009B558C /* Credits.rtf */; };
 		010B8EDD1AA7E00600A1B55A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E0B5C137A11E1009B558C /* MainMenu.xib */; };
 		010B8EDE1AA7E00600A1B55A /* ABNotifier.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 564B67E9152E090200753DF9 /* ABNotifier.bundle */; };
-		010B8EE11AA7E00600A1B55A /* CrashReporter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01ABD1321AA15CE0005638A7 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		019511C61A9C0217007F9070 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019511C51A9C0217007F9070 /* SystemConfiguration.framework */; };
 		019511CA1A9C3E76007F9070 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019511C91A9C3E76007F9070 /* UIKit.framework */; };
 		01CC7556199D6653007B7A91 /* ABCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC7555199D6653007B7A91 /* ABCrashReport.m */; };
 		01DB74D01AE1DAD300AEDEEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DB74CE1AE1DAD300AEDEEE /* ViewController.m */; };
 		01DB74D11AE1DAD300AEDEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DB74CF1AE1DAD300AEDEEE /* Main.storyboard */; };
 		01F0665B199DE85300F0CC61 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0665A199DE85300F0CC61 /* CrashReporter.framework */; };
+		06955F64283B71CE005D89D1 /* CrashReporter in Frameworks */ = {isa = PBXBuildFile; productRef = 06955F63283B71CE005D89D1 /* CrashReporter */; };
 		3B2E0B70137A11F9009B558C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E0B6E137A11F9009B558C /* InfoPlist.strings */; };
 		3B2E0B73137A11F9009B558C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E0B72137A11F9009B558C /* main.m */; };
 		3B2E0B76137A11F9009B558C /* HTSAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E0B75137A11F9009B558C /* HTSAppDelegate_iOS.m */; };
@@ -38,19 +37,6 @@
 		564B67EB152E090200753DF9 /* ABNotifier.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 564B67E9152E090200753DF9 /* ABNotifier.bundle */; };
 		5D0DD3D618B7266A00650AA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0DD3D518B7266A00650AA1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		010B8EE01AA7E00600A1B55A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				010B8EE11AA7E00600A1B55A /* CrashReporter.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		010B8EE51AA7E00600A1B55A /* AirbrakeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbrakeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010B8ED71AA7E00600A1B55A /* Cocoa.framework in Frameworks */,
-				010B8ED81AA7E00600A1B55A /* CrashReporter.framework in Frameworks */,
+				06955F64283B71CE005D89D1 /* CrashReporter in Frameworks */,
 				010B8ED91AA7E00600A1B55A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,14 +226,16 @@
 				010B8ECE1AA7E00600A1B55A /* Sources */,
 				010B8ED61AA7E00600A1B55A /* Frameworks */,
 				010B8EDA1AA7E00600A1B55A /* Resources */,
-				010B8EDF1AA7E00600A1B55A /* ShellScript */,
-				010B8EE01AA7E00600A1B55A /* CopyFiles */,
+				06955F65283B71DA005D89D1 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AirbrakeMac;
+			packageProductDependencies = (
+				06955F63283B71CE005D89D1 /* CrashReporter */,
+			);
 			productName = "Hoptoad Mac";
 			productReference = 010B8EE51AA7E00600A1B55A /* AirbrakeMac.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +277,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				de,
 				es,
@@ -301,6 +290,9 @@
 				"zh-Hant",
 			);
 			mainGroup = 3B2E0B18137A11B1009B558C;
+			packageReferences = (
+				06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */,
+			);
 			productRefGroup = 3B2E0B24137A11B1009B558C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,18 +329,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		010B8EDF1AA7E00600A1B55A /* ShellScript */ = {
+		06955F65283B71DA005D89D1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+			);
+			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /usr/bin/ruby;
-			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/guicocoa/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/digdog/xcode-git-cfbundleversion/\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\nrequire 'rubygems'\nbegin\nrequire 'Plist'\nrescue LoadError => e\nputs \"You need to install the 'Plist' gem: [sudo] gem install plist\"\nexit 1\nend\n\nraise \"Must be run from Xcode\" unless ENV['XCODE_VERSION_ACTUAL']\n\nGIT = \"/usr/bin/git\"\nPRODUCT_PLIST = File.join(ENV['BUILT_PRODUCTS_DIR'], ENV['INFOPLIST_PATH'])\nREVISION = `#{GIT} log --pretty=format:'' | wc -l`.scan(/\\d/).to_s\nBUNDLE_VERSION = \"CFBundleVersion\"\n\nif File.file?(PRODUCT_PLIST) and REVISION\n\n# update product plist\n`/usr/bin/plutil -convert xml1 \\\"#{PRODUCT_PLIST}\\\"`\ninfo = Plist::parse_xml(PRODUCT_PLIST)\nif info\ninfo[BUNDLE_VERSION] = REVISION\ninfo.save_plist(PRODUCT_PLIST)\nend\n`/usr/bin/plutil -convert binary1 \\\"#{PRODUCT_PLIST}\\\"`\n\n# log\nputs \"updated #{BUNDLE_VERSION} to #{REVISION}\"\n\nend\n";
+			shellPath = /bin/sh;
+			shellScript = "BUILD_NUMBER=`/usr/bin/git log --pretty=format:'' | wc -l | sed -e 's/[^0-9]//g'`\nagvtool new-version -all $BUILD_NUMBER\n";
 		};
 		3BFC84D8139C5AB7000D2BB2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -361,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /usr/bin/ruby;
-			shellScript = "";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -628,6 +624,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/plcrashreporter.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06955F63283B71CE005D89D1 /* CrashReporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */;
+			productName = CrashReporter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B2E0B1A137A11B1009B558C /* Project object */;
 }
