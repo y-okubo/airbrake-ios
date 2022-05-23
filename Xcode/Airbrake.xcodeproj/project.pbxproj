@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,7 +26,8 @@
 		01DB74D01AE1DAD300AEDEEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DB74CE1AE1DAD300AEDEEE /* ViewController.m */; };
 		01DB74D11AE1DAD300AEDEEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DB74CF1AE1DAD300AEDEEE /* Main.storyboard */; };
 		01F0665B199DE85300F0CC61 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F0665A199DE85300F0CC61 /* CrashReporter.framework */; };
-		06955F64283B71CE005D89D1 /* CrashReporter in Frameworks */ = {isa = PBXBuildFile; productRef = 06955F63283B71CE005D89D1 /* CrashReporter */; };
+		06955F78283B817F005D89D1 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06955F77283B817F005D89D1 /* CrashReporter.framework */; };
+		06955F79283B817F005D89D1 /* CrashReporter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06955F77283B817F005D89D1 /* CrashReporter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B2E0B70137A11F9009B558C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E0B6E137A11F9009B558C /* InfoPlist.strings */; };
 		3B2E0B73137A11F9009B558C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E0B72137A11F9009B558C /* main.m */; };
 		3B2E0B76137A11F9009B558C /* HTSAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E0B75137A11F9009B558C /* HTSAppDelegate_iOS.m */; };
@@ -37,6 +38,20 @@
 		564B67EB152E090200753DF9 /* ABNotifier.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 564B67E9152E090200753DF9 /* ABNotifier.bundle */; };
 		5D0DD3D618B7266A00650AA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D0DD3D518B7266A00650AA1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06955F7A283B817F005D89D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				06955F79283B817F005D89D1 /* CrashReporter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		010B8EE51AA7E00600A1B55A /* AirbrakeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbrakeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +66,7 @@
 		01DB74CE1AE1DAD300AEDEEE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		01DB74CF1AE1DAD300AEDEEE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		01F0665A199DE85300F0CC61 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		06955F77283B817F005D89D1 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = ../Airbrake/CrashReporter.framework; sourceTree = "<group>"; };
 		3B2E0B4F137A11E1009B558C /* AirbrakeMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirbrakeMac-Info.plist"; sourceTree = "<group>"; };
 		3B2E0B51137A11E1009B558C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B2E0B53137A11E1009B558C /* AirbrakeMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirbrakeMac-Prefix.pch"; sourceTree = "<group>"; };
@@ -87,7 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010B8ED71AA7E00600A1B55A /* Cocoa.framework in Frameworks */,
-				06955F64283B71CE005D89D1 /* CrashReporter in Frameworks */,
+				06955F78283B817F005D89D1 /* CrashReporter.framework in Frameworks */,
 				010B8ED91AA7E00600A1B55A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06955F76283B817F005D89D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06955F77283B817F005D89D1 /* CrashReporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B2E0B18137A11B1009B558C = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +138,7 @@
 				3B2E0B4D137A11E1009B558C /* Airbrake Mac */,
 				3B2E0B6B137A11F9009B558C /* Airbrake iOS */,
 				3B2E0B24137A11B1009B558C /* Products */,
+				06955F76283B817F005D89D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +252,7 @@
 				010B8ED61AA7E00600A1B55A /* Frameworks */,
 				010B8EDA1AA7E00600A1B55A /* Resources */,
 				06955F65283B71DA005D89D1 /* ShellScript */,
+				06955F7A283B817F005D89D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +260,6 @@
 			);
 			name = AirbrakeMac;
 			packageProductDependencies = (
-				06955F63283B71CE005D89D1 /* CrashReporter */,
 			);
 			productName = "Hoptoad Mac";
 			productReference = 010B8EE51AA7E00600A1B55A /* AirbrakeMac.app */;
@@ -291,7 +316,6 @@
 			);
 			mainGroup = 3B2E0B18137A11B1009B558C;
 			packageReferences = (
-				06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */,
 			);
 			productRefGroup = 3B2E0B24137A11B1009B558C /* Products */;
 			projectDirPath = "";
@@ -447,7 +471,7 @@
 				GCC_PREFIX_HEADER = "Airbrake Mac/AirbrakeMac-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "Airbrake Mac/AirbrakeMac-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airbrake\\ Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guicocoa.$(PRODUCT_NAME:rfc1034identifier)";
@@ -474,7 +498,7 @@
 				GCC_PREFIX_HEADER = "Airbrake Mac/AirbrakeMac-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "Airbrake Mac/AirbrakeMac-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airbrake\\ Mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guicocoa.$(PRODUCT_NAME:rfc1034identifier)";
@@ -648,25 +672,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/microsoft/plcrashreporter.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		06955F63283B71CE005D89D1 /* CrashReporter */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 06955F62283B71CE005D89D1 /* XCRemoteSwiftPackageReference "plcrashreporter" */;
-			productName = CrashReporter;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B2E0B1A137A11B1009B558C /* Project object */;
 }

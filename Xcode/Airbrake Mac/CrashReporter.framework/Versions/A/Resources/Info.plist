@@ -3,36 +3,46 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>14C109</string>
+	<string>21F79</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>CrashReporter</string>
 	<key>CFBundleIdentifier</key>
-	<string>coop.plausible.CrashReporter</string>
+	<string>com.microsoft.CrashReporter</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>CrashReporter</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.10.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.10.1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6A2008a</string>
+	<string>13E500a</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>12.3</string>
 	<key>DTSDKBuild</key>
-	<string>14A382</string>
+	<string>21E226</string>
 	<key>DTSDKName</key>
-	<string>macosx10.10</string>
+	<string>macosx12.3</string>
 	<key>DTXcode</key>
-	<string>0611</string>
+	<string>1331</string>
 	<key>DTXcodeBuild</key>
-	<string>6A2008a</string>
+	<string>13E500a</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.9</string>
 </dict>
 </plist>
