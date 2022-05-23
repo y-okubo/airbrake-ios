@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Airbrake-iOS"
-  s.version      = "4.2.14"
+  s.version      = "4.2.15"
   s.summary      = "An Airbrake Notifier for iOS"
 
   s.description  = <<-DESC
@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
 
   s.osx.deployment_target = '10.9'
+
+  s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
   
   s.source       = { :git => "https://github.com/airbrake/airbrake-ios.git", :tag => "4.2.8" }
 
@@ -27,10 +29,7 @@ Pod::Spec.new do |s|
 
   s.framework  = "SystemConfiguration"
 
-  s.ios.vendored_frameworks  = "Airbrake/CrashReporter.framework"
-
-  s.osx.vendored_frameworks  = "Airbrake/CrashReporter.framework"
+  s.vendored_frameworks  = "Airbrake/CrashReporter.framework"
 
   s.requires_arc = true
-
 end
