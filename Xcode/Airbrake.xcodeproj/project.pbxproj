@@ -473,7 +473,7 @@
 				INFOPLIST_FILE = "Airbrake Mac/AirbrakeMac-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airbrake\\ Mac";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guicocoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AirbrakeMac;
 				SDKROOT = macosx;
@@ -500,7 +500,7 @@
 				INFOPLIST_FILE = "Airbrake Mac/AirbrakeMac-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Airbrake\\ Mac";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.guicocoa.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AirbrakeMac;
 				SDKROOT = macosx;

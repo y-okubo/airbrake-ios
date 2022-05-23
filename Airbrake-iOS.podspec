@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Airbrake-iOS"
-  s.version      = "4.2.13"
+  s.version      = "4.2.14"
   s.summary      = "An Airbrake Notifier for iOS"
 
   s.description  = <<-DESC
@@ -28,6 +28,8 @@ Pod::Spec.new do |s|
   s.framework  = "SystemConfiguration"
 
   s.ios.vendored_frameworks  = "Airbrake/CrashReporter.framework"
+
+  s.osx.vendored_frameworks  = "Airbrake/CrashReporter.framework"
 
   s.requires_arc = true
 
