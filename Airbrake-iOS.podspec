@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'Airbrake-iOS'
 
-  s.version = '4.2.18'
+  s.version = '4.2.19'
 
   s.summary = 'An Airbrake Notifier for iOS'
 
@@ -27,7 +27,9 @@ Pod::Spec.new do |s|
 
   s.framework = 'SystemConfiguration'
 
-  s.vendored_frameworks = 'Airbrake/CrashReporter.framework'
+  s.ios.vendored_frameworks = 'Airbrake/CrashReporter.framework'
+
+  s.osx.vendored_frameworks = 'Airbrake/CrashReporter.framework'
 
   s.preserve_paths = 'Airbrake/CrashReporter.framework/*'
 
