@@ -29,8 +29,6 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks  = "Airbrake/CrashReporter.framework"
 
-  s.osx.vendored_frameworks  = "Airbrake/CrashReporter.framework"
-
   s.requires_arc = true
 
 end
