@@ -6,7 +6,7 @@
 //
 //
 
-#import <CrashReporter/CrashReporter.h>
+#import "CrashReporter.h"
 #import "ABCrashReport.h"
 #import "ABNotifierFunctions.h"
 #import "ABNotice.h"
